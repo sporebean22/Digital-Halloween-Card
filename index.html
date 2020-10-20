@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<!--https://picsum.photos/ -->
+<!--https://source.unsplash.com/ -->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Digital Halloween Card</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.4.1/fetch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.2.0/mocha.min.js"></script>
+    <script src="Logic/script.js"> </script> 
+    <script src="Logic/ImageMgmt.js"> </script>
+    <script data-consolejs-channel="0df43e1e-5320-e8f4-006f-53857f42ba97"src="https://remotejs.com/agent/agent.js"></script>
+    <link href="Style/style.css" rel="stylesheet" type="text/css" />
+  </head> 
+  <body>
+      <div class="Screen" id="screen">
+        <img id="image" src="Style/Images/Boofkin.jpg">
+          <br>
+            <pre id="halloweenmessage"> Happy Halloween</pre>
+              <pre id="NameBar"> </pre>
+                  <input id="NameInput"  class="SButtons" size="22" maxlength="40" size="4" placeholder='please enter your name'/> 
+                  <button id="SubmitButton"  class="SButtons" onclick="RecieveUsersName()">Submit</button>
+                    <button id="ResetButton" class="SButtons" onclick="reset()">Reset</button>
+                    <button id="RandomImageButton" class="SButtons" onclick="SetImageFromApi()">Random image</button>
+                    <div>
+  </body>
+</html>
